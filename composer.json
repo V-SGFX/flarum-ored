@@ -1,0 +1,18 @@
+{
+  "name": "acme/flarum-theme",
+  "description": "A custom Flarum theme",
+  "type": "flarum-extension",
+  "require": {
+    "flarum/core": "^1.0.0"
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "My Theme",
+      "icon": {
+        "name": "fas fa-paint-brush",
+        "backgroundColor": "#ff0000",
+        "color": "#fff"
+      }
+    }
+  }
+}
