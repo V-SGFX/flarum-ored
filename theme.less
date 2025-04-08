@@ -1,0 +1,50 @@
+// Zmienne kolorystyczne (jak old.reddit)
+@primary-color: #5f99cf;  // Niebieski podobny do reddit
+@background-color: #f8f9fa;  // Lekko szare tło
+@text-color: #222;  // Ciemnoszary tekst
+@border-color: #ddd;  // Szara ramka
+
+// Główne style
+body {
+  background-color: @background-color;
+  color: @text-color;
+  font-family: Arial, sans-serif;  // Klasyczna czcionka
+}
+
+// Nagłówek (inspirowany reddit)
+.App-header {
+  background-color: white;
+  border-bottom: 1px solid @border-color;
+  box-shadow: none !important;
+}
+
+// Lista dyskusji (gęsta, jak old.reddit)
+.DiscussionList {
+  margin: 0;
+  padding: 0;
+}
+
+.DiscussionListItem {
+  background: white;
+  border: 1px solid @border-color;
+  border-radius: 0 !important;  // Brak zaokrągleń
+  margin-bottom: 8px;
+  padding: 8px 12px;
+
+  &:hover {
+    border-left: 2px solid @primary-color;
+  }
+}
+
+// Przyciski (prostsze)
+.Button {
+  border-radius: 0 !important;
+  background: #e9e9e9 !important;
+  border: 1px solid @border-color !important;
+}
+
+// Stopka
+.App-footer {
+  border-top: 1px solid @border-color;
+  background: white;
+}
